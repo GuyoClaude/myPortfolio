@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Navs</title>
+</head>
+
+<body>
+
+    <div class="head">
+        <div class="title">
+            <h1>Web Zone</h1>
+            <div class="content">
+                <div class="nav" id="nav">
+                    <ul>
+                        <li>Home</li>
+                        <li>Home</li>
+                        <li>Home</li>
+                        <li>Home</li>
+                        <li>Home</li>
+
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, in aliquam cumque blanditiis aut facilis reiciendis dignissimos ipsa quod autem quisquam placeat sapiente nobis quaerat reprehenderit amet doloremque quam similique officia explicabo
+                voluptate molestiae expedita! Ut iure dignissimos magnam molestiae blanditiis aliquid provident beatae cum quaerat enim! Quae, laudantium sequi?</p>
+            <br>
+            <br>
+            <br>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, in aliquam cumque blanditiis aut facilis reiciendis dignissimos ipsa quod autem quisquam placeat sapiente nobis quaerat reprehenderit amet doloremque quam similique officia explicabo
+                voluptate molestiae expedita! Ut iure dignissimos magnam molestiae blanditiis aliquid provident beatae cum quaerat enim! Quae, laudantium sequi?</p>
+            <br>
+            <br>
+            <br>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, in aliquam cumque blanditiis aut facilis reiciendis dignissimos ipsa quod autem quisquam placeat sapiente nobis quaerat reprehenderit amet doloremque quam similique officia explicabo
+                voluptate molestiae expedita! Ut iure dignissimos magnam molestiae blanditiis aliquid provident beatae cum quaerat enim! Quae, laudantium sequi?</p>
+            <br>
+            <br>
+            <br>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, in aliquam cumque blanditiis aut facilis reiciendis dignissimos ipsa quod autem quisquam placeat sapiente nobis quaerat reprehenderit amet doloremque quam similique officia explicabo
+                voluptate molestiae expedita! Ut iure dignissimos magnam molestiae blanditiis aliquid provident beatae cum quaerat enim! Quae, laudantium sequi?</p>
+            <br>
+            <br>
+            <br>
+        </div>
+    </div>
+
+    <!-- javascript -->
+    <script>
+        var nav = document.getElementById('nav');
+
+        window.onscroll = function() {
+
+            if (window.pageYOffset > 100) {
+
+                nav.style.position = "fixed";
+                nav.style.top = 0;
+
+            } else {
+                // nav.style.position = "absolute";
+                nav.style.position = 'relative'; //fixed
+                nav.style.top = 100;
+            }
+        }
+    </script>
+
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+        
+        body {
+            background: #555;
+        }
+        
+        .content {
+            max-width: 1200px;
+            margin: auto;
+            /* background: white; */
+            margin-top: 10px;
+            /* padding: 10px; */
+        }
+        
+        .head {
+            width: 100%;
+        }
+        
+        .head h1 {
+            font-size: 50px;
+            padding: 0px 40px;
+            line-height: 100px;
+            color: orange;
+            background: white;
+            font-family: serif;
+        }
+        
+        .head .nav {
+            background: lightgray;
+            padding: 10px 0px;
+            text-align: center;
+            position: relative;
+            width: 100%;
+        }
+        
+        .nav li {
+            list-style-type: none;
+            display: inline-block;
+            padding: 10px 40px;
+            text-align: center;
+            border-left: 1px solid white;
+            columns: white;
+            font-size: 18px;
+        }
+        
+        .box {
+            width: 60%;
+            margin: 150px auto;
+            background: white;
+            padding: 20px;
+            font-size: 25px;
+        }
+    </style>
+
+
+</body>
+
+</html>
